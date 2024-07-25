@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #26cee1;
+  --primary-color-dark: #39d0cb;
+  --secondary-color: #ac8c45;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #100a0a;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #60c2f0;
+}
+
+nav input {
+  display: none;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(41, 164, 189);
+}
+
+.section {
+  padding-top: calc(1.5rem + 1rem + 2rem); /* Height of nav (padding) */
+  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  background-image: url("ss.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__container h1,
+.about__container h2 {
+  margin-bottom: 20px;
+  color: #5e84ce;
+  padding-top: 15px;
+}
+
+.about__container p {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.about__container ul {
+  margin-bottom: 20px;
+  list-style-type: none; /* Remove default list styles */
+  padding-left: 0; /* Remove left padding */
+  text-align: center; /* Center align list items */
+}
+
+.about__container ul li {
+  margin-bottom: 10px;
+  padding: 10px; /* Add padding for background */
+  background-color: #d1eff8; /* Light gray background */
+  border: 1px solid #ebe3e3; /* Add border to separate items */
+  border-radius: 5px; /* Add border radius */
+}
+
+@media (max-width: 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav .checkbox:checked + ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .about__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+  }
+}
+
+.about {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 200px;
+  background-color: var(--extra-light);
+}
