@@ -55,6 +55,9 @@ ul {
   list-style: none;
   transition: left 0.3s;
 }
+.contact p{
+  color: #ffeded;
+}
 
 ul li a {
   padding: 0.5rem 1rem;
@@ -65,8 +68,8 @@ ul li a {
 }
 
 .section {
-  padding-top: calc(1.5rem + 1rem + 2rem); /* Height of nav (padding) */
-  min-height: 100vh; /* Ensure it takes at least the full viewport height */
+  padding-top: calc(1.5rem + 1rem + 2rem); 
+  min-height: 100vh; 
   background-image: url("ss.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -140,43 +143,15 @@ button {
 button:hover {
   background-color: var(--primary-color-dark);
 }
-
-@media (max-width: 750px) {
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav .checkbox:checked + ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .contact__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-  }
-
-  .contact__card {
-    padding: 1.5rem;
-  }
+.contact__container {
+  padding: 10rem 1rem 5rem 1rem;
+  text-align: center;
 }
-
 .contact {
   position: relative;
-  padding-top: 100px;
-  padding-bottom: 200px;
-  background-image: url("ss.jpeg");
+  padding-top: 10px;
+  padding-bottom: 20px;
+  background-image: url("sss.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-}
+} 

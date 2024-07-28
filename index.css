@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 :root {
-  --primary-color: #a855f7;
+  --primary-color: #9dd6e0;
   --primary-color-dark: hwb(190 5% 23%);
   --secondary-color: #ca8a04;
   --text-dark: #2ba1e1;
@@ -21,8 +21,6 @@ a {
 
 body {
   font-family: "Nunito", sans-serif;
-  
-
 }
 
 nav {
@@ -31,7 +29,6 @@ nav {
   top: 0;
   left: 0;
   background-color: #0d0909;
-  z-index: 99;
 }
 
 .nav__content {
@@ -39,11 +36,10 @@ nav {
   margin: auto;
   padding: 1.5rem 1rem;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+ justify-content: space-between;
 }
 
-nav .logo a {
+nav .logo {
   font-size: 1.5rem;
   font-weight: 600;
   color: var(--primary-color);
@@ -82,7 +78,8 @@ ul li a {
 }
 
 .section {
-  background-image: url("ss.jpeg");
+  padding-top: 2%;
+  background-image: url("sss.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -93,7 +90,7 @@ ul li a {
   margin: auto;
   padding: 1rem;
   display: grid;
-  grid-template-columns: repeat(1, 5fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 4rem;
   align-items: center;
 }
@@ -111,11 +108,11 @@ ul li a {
   border-radius: 50%; 
   object-fit: cover; 
   margin-bottom: 25px;
-  transition: transform 0.3s ease-in-out; /* Add transition for smooth pop-up */
 }
 
 .image img:hover {
-  transform: scale(1.1); /* Image pop-up effect on hover */
+  transform: scale(1.015);
+  cursor: pointer;
 }
 
 .text-below-image {
@@ -148,16 +145,6 @@ ul li a {
   flex-direction: column;
   justify-content: center;
 }
-
-.description {
-  line-height: 1.6rem;
-  color: var(--text-light); /* Removed extra space */
-  margin-bottom: 2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .action__btns {
   display: flex;
   flex-direction: column;
@@ -171,10 +158,10 @@ ul li a {
   font-size: 1rem;
   font-weight: 600;
   letter-spacing: 2px;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   outline: none;
   border: #000000;
-  border-radius: 10px;
+  border-radius: 1000px;
   cursor: pointer;
   font-family: "Nunito", sans-serif;
 }
@@ -185,6 +172,7 @@ ul li a {
   flex-direction: column;
   justify-content: center;
   font-family: "Nunito", sans-serif;
+  
 }
 
 .portfolio {
@@ -196,82 +184,16 @@ ul li a {
   font-family: "Nunito", sans-serif;
   
 }
-
-
-@media (max-width: 750px) { 
-  nav .checkbox {
-    display: block;
-  }
-
-  ul {
-    position: absolute;
-    width: 100%;
-    height: calc(100vh - 85px);
-    left: -100%;
-    top: 85px;
-    background-color: var(--extra-light);
-    flex-direction: column;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  nav #check:checked ~ ul {
-    left: 0;
-  }
-
-  ul li a {
-    font-size: 1.25rem;
-  }
-
-  .section__container {
-    padding: 10rem 1rem 5rem 1rem;
-    text-align: center;
-    grid-template-columns: 200fr; /* Single column on small screens */
-  }
-
-  .image {
-    grid-area: 1/1/2/2;
-  }
-
-  .content {
-    order: 3;
-  }
-
-  .action__btns {
-    margin: auto;
-  
-  }
-}
 .hire__me:hover {
+  transform: scale(0.9);
   background-color:#d7d4d9;
   color: #373638;
 }
-
-
-
-.portfolio:hover {
-  background-color:#d7d4d9;
-  color: #373638;
-}
-/* Ensure proper spacing and alignment for the logo section */
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.logo a {
-  font-size: 1.5rem;
-  font-weight: 600;
-  color:black;
-  margin-bottom: 0.5rem; /* Add margin to space out the icons */
-}
-
 .social-icons {
   display: flex;
-  gap: 1rem; /* Space between icons */
+  gap: 1rem; 
+  color: white;
 }
-
 .social-icons a {
   display: inline-block;
   text-align: center;
@@ -279,15 +201,10 @@ ul li a {
 }
 
 .social-icons i {
-  font-size: 1.7rem; /* Adjust icon size */
-  color:black; /* Default color for icons */
-  transition: transform 0.3s ease-in-out, color 0.3s ease; /* Smooth pop-up effect and color transition */
+  font-size: 2.3rem; 
 }
-
-.social-icons a:hover i {
-  transform: scale(1.4); /* Icon pop-up effect on hover */
-  color: var(--text-dark); /* Change color on hover */
-}
-.back{
-  width: 500px;
+.social-icons i:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+  color: #2ba1e1;
 }
