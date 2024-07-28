@@ -4,7 +4,7 @@
   --primary-color: #0b239c;
   --primary-color-dark: #4589e2;
   --secondary-color: #ca8a04;
-  --text-dark: #1f2937;
+  --text-dark: #7194c5;
   --text-light: #6b7280;
   --extra-light: #faf5ff;
   --max-width: 1200px;
@@ -82,17 +82,17 @@ ul li a {
 }
 
 .contact__card {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(47, 47, 47);
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(208, 25, 25, 0.1);
   max-width: 800px;
   width: 100%;
 }
 
 .contact__card h1 {
   margin-bottom: 20px;
-  color: #485060;
+  color: #3d61a9;
   text-align: center;
 }
 
@@ -176,5 +176,7 @@ button:hover {
   position: relative;
   padding-top: 100px;
   padding-bottom: 200px;
-  background-color: var(--extra-light);
+  background-image: url("ss.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
