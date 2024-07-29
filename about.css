@@ -44,8 +44,11 @@ ul li a{
   color: #07bbcf8f;
   
 }
+
+
 ul {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 2rem;
 }
